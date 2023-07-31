@@ -1,0 +1,19 @@
+﻿@*@page
+@model hobbies.Pages.HobbyModel
+@{
+}
+*@
+
+@page
+@model HobbyModel
+
+<h1>My Hobbies</h1>
+
+<ul>
+    @foreach (var hobby in Model.Hobby)
+    {
+        <li>
+            <strong>@hobby.Name</strong>: @hobby.Description
+        </li>
+    }
+</ul>
