@@ -7,7 +7,7 @@ namespace hobbies.Pages
    // [HttpGet("Hobby")]
     public class HobbyModel : PageModel
     {
-        public List<Hobby> Hobby { get; private set; }
+        public List<Hobby>? Hobby { get; private set; }
 
         public void OnGet()
         {

@@ -27,8 +27,41 @@
 
 <p>Here is Katia's website.</p>
 
+<div class="button-container">
+    <button id="aboutMeBtn" class="active">About me</button>
+    <button id="myWorksBtn">My Works</button>
+</div>
+
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <table>
+        <tr>
+            <td><a href="#" class="button"><img src="icon1.png" alt="Icon 1"></a></td>
+            <td><a href="#" class="button"><img src="icon2.png" alt="Icon 2"></a></td>
+            <td><a href="#" class="button"><img src="icon3.png" alt="Icon 3"></a></td>
+            <td><a href="#" class="button"><img src="icon4.png" alt="Icon 4"></a></td>
+        </tr>
+    </table>
+</body>
+</html>
 <a asp-page="About">About Me</a>
 
-<div>
-    <a asp-page="Hobby">My Hobbies</a>
-</div>
+    <a asp-page="Hobby">My Works</a>
+
+<script>
+    const aboutMeBtn = document.getElementById("aboutMeBtn");
+    const myWorksBtn = document.getElementById("myWorksBtn");
+
+    aboutMeBtn.addEventListener("click", () => {
+        aboutMeBtn.classList.add("active");
+        myWorksBtn.classList.remove("active");
+    });
+
+    myWorksBtn.addEventListener("click", () => {
+        myWorksBtn.classList.add("active");
+        aboutMeBtn.classList.remove("active");
+    });
+</script>

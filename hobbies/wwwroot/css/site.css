@@ -16,7 +16,113 @@ html {
   position: relative;
   min-height: 100%;
 }
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+.site-header {
+    background-image: url('/triangle.jpg');
+}
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('/triangle.jpg');
+    background-size: cover; /* This ensures the image covers the entire body */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    /* You can add more styling properties as needed */
 }
+
+h1 {
+    color: #ffffff; /* white color for h1 headings */
+
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center; /* Center align the text horizontally */
+    margin-bottom: 50px;
+}
+
+p {
+    color: #ffffff; /* white gray color for paragraphs */
+    font-size: 20px;
+    text-align: center; /* Center align the text horizontally */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/ /* To center vertically */
+}
+
+    .button-container button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: 2px solid white; /* White border for both active and inactive buttons */
+        border-radius: 25px;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .button-container button.active {
+            background-color: white;
+            color: #333;
+        }
+
+/* styles.css */
+
+table {
+    border-collapse: separate;
+    /*border-spacing: 3px;*/ /* Adjust the spacing between cells as needed */
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    border: none;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Adjust the width of the button as needed */
+    height: 200px; /* Adjust the height of the button as needed */
+    border-radius: 10px; /* Adjust the radius to control the roundness of corners */
+    background-color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+    .button img {
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+    }
+
+    .button:hover {
+        background-color: #f1f1f1; /* Adjust the background color on hover as desired */
+    }
+
+
+
+/*body {
+  margin-bottom: 60px;
+}*/
